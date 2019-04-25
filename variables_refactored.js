@@ -1,2 +1,2 @@
 var bits = 8;
-console.log(' There are ${8} bits in a byte ');
+console.log(' There are ${bits} bits in a byte ');
