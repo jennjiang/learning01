@@ -8,7 +8,10 @@ var tvShow = {
        name1: "The Office",
        name2: "Modern Family",
    }, 
+   Sifi:{
+       time:'2',
+   },
 };
 
-console.log(tvShow.Comedy.name1);
+console.log(tvShow.Sifi.time);
 console.log(tvShow.Horror.name2);
