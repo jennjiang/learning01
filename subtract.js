@@ -1,7 +1,6 @@
-
-function sum(firstNumber, secondNumber) { 
-	var total = firstNumber - secondNumber; 
-	return total; 
+function subtract(firstNumber, secondNumber) {
+  var total = firstNumber - secondNumber;
+  return total;
 }
 
-console.log(sum(10,3));
+console.log(subtract(10, 3));
