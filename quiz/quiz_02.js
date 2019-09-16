@@ -1,5 +1,5 @@
 function farenheitToCelsius(faren) {
-  return (((faren - 32) * 5) / 9).toFixed(5);
+  return (((faren - 32) * 5) / 9).toFixed(1);
 }
 
 function printCurrent(temp, degree) {
