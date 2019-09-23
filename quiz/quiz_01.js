@@ -1,5 +1,7 @@
 // takes in a value of timeOfDay as a number, like 1, 4, 12, 21
 // doesn't return anything
+
+// var timeOfDay = [1, 4, 12, 21];
 function greetUser(timeOfDay) {
   if (timeOfDay < 12) {
     console.log("Good morning");
@@ -12,9 +14,9 @@ function greetUser(timeOfDay) {
 
 // takes no input
 // returns only the hour of the day
-function getTimeOfDay() {
-  var timeOfDay = new Date();
-  timeOfDay.getHours();
+function getTimeOfDay(date) {
+  var date = new Date();
+  return date.getHours();
 }
 
 // we assign the return value from getTimeOfDay to this variable
