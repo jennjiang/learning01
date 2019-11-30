@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.nav-links {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: grey;
+  margin-right: 20px;
+}
+
+.logo {
+  font-family: "Noto Sans JP", sans-serif;
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 100px;
+  text-decoration: none;
+  color: #60ebaf;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 16pt;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .nav-links:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+.main-element {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+h1 {
+  margin-left: 100px;
+  padding-top: 90px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 90pt;
+  line-height: 145px;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14pt;
+  color: gray;
+  line-height: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
